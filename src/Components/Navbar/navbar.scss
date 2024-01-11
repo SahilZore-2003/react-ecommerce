@@ -1,0 +1,138 @@
+nav,
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    padding-inline: 5%;
+    padding-top: 1rem;
+    padding-bottom: .7rem;
+    border-bottom: .3px solid #413f3fb0;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+    background-color: white;
+    transition: .3s linear;
+
+    img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    a{
+        margin-inline: 0px;
+    }
+
+    img {
+        object-fit: contain;
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #171717;
+    }
+
+}
+
+
+ a {
+        margin-inline: 10px;
+        color: #413f3f;
+        text-decoration: none;
+        position: relative;
+        
+}
+
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    button {
+        padding: 5px 30px;
+        border-radius: 15px;
+        border: 1px solid #39373798;
+        outline: none;
+        background-color: white;
+        color: #171717;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: .3s linear;
+
+        
+
+        &:hover{
+            background-color: #eb423f;
+            color: white;
+            
+        }
+        
+
+    }
+
+
+    img {
+        width: 30px;
+        cursor: pointer;
+    }
+
+    div {
+        position: relative;
+
+        .cartitems {
+            position: absolute;
+            right: -8px;
+            top: -10px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 8px;
+            transform: scale(.6);
+            font-size: 16px;
+            user-select: none;
+
+        }
+    }
+}
+
+.active {
+    padding-bottom: 5px;
+    color: #413f3f;
+    border-bottom: 2px solid #eb423f;
+}
+
+#navicon{
+    display: none;
+}
+
+@media (max-width:800px){
+    #navicon{
+        display: inline-block;
+    }
+
+    ul{
+        display: none;
+    }
+}
+
+@media (max-width:450px){
+    .logo span{
+        font-size: 1rem;
+    }
+}

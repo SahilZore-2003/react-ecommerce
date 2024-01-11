@@ -1,0 +1,148 @@
+.cartitem {
+    margin: 3rem 5%;
+    width: 100%;
+
+    hr {
+        height: 3px;
+        border: 0;
+        background-color: #e2e2e2;
+    }
+
+    .main-format {
+        align-items: center;
+        text-align: center;
+        display: grid;
+        padding: 20px 0;
+        color: #454545;
+        grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .format{
+        align-items: center;
+        text-align: center;
+        display: grid;
+        padding: 20px 0;
+        color: #454545;
+        grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+        font-size: 18px;
+        font-weight: 600;
+
+        img{
+            margin: 0 auto;
+        }
+
+        .cross{
+            object-fit: contain;
+            width: 1rem;
+            height: 1rem;
+        }
+
+        button{
+            width: 3rem;
+            height: 2.5rem;
+            background-color: white;
+            border: 2px solid #ebebeb;
+            text-align: center;
+            padding: 0;
+            margin: auto;
+        }
+    }
+}
+
+.cartitems-down{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    
+    .total,.promo-code{
+        flex: 1;
+    }
+
+    .promo-code{
+        padding-left: 10%;
+    }
+
+    .total{
+        h1{
+            font-weight: 600;
+            font-size: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .total-items{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: .8rem 0;
+        }
+
+        button{
+            color: white;
+            padding: 1rem 2rem;
+            background-color: #eb423f;
+            border-radius: 0px;
+            font-weight: 500;
+            
+        }
+
+        
+    }
+
+    .promo-code{
+        p{
+            color: #a0a0a0;
+            font-size: .8rem;
+            padding-bottom: .8rem;
+        }
+
+        div{
+            display: flex;
+
+            input{
+                width: 50%;
+                background-color: #c0c0c0ab;
+                padding: 10px;
+                border: none;
+                outline: none;
+            }
+
+            button{
+                border-radius: 0%;
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width:700px){
+    .cartitems-down{
+        flex-direction: column;
+
+        .promo-code{
+            padding-left: 0;
+            padding-top: 2rem;
+
+           div{
+            input{
+                width: 80%;
+            }
+           }
+
+        }
+    }
+
+    .format p{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:500px){
+    .main-format{
+        p{
+            font-size: 0.8rem;
+        }
+    }
+}

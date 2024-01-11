@@ -1,0 +1,25 @@
+.mobilelinks{
+    height: 100vh;
+    position: fixed;
+    top: 84px;
+    width: 100%;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: .2s linear;
+    z-index: 100;
+
+    a{
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 10px;
+        position: relative;
+
+        
+    }
+
+    .active{
+        color: #eb423f;
+        border-bottom: 0px;
+    }
+}
